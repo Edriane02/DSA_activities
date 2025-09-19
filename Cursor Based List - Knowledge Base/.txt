@@ -1,0 +1,185 @@
+Cursor Based List - Knowledge Base
+by Edwin Bartlett
+
+You just had this amazing idea of creating a knowledge base for your company’s internal system. A knowledge base is a centralized repository of information, organized to support information retrieval and sharing within an organization. This knowledge base would contain everything employees will need to know about the system, such as credentials, guides, and manuals that should only be shared within the organization.
+
+ 
+
+To promote security, you decided to use a Virtual Heap that only exists in a protected portion of the memory. You will then use a cursor-based implementation of a list to store the data with a maximum of 20 cells. The structure of the data is as follows:
+
+Article: {
+   id: integer,
+   title: string(64),
+   content: string(255),
+}
+
+As the admin of this knowledge base, you should be able to perform the following operations:
+
+Insert new article
+The user will provide the article details and a position to insert the article. If position is -1, it should be added to the end of the list.
+Article id is automatically generated (ascending order).
+View list of articles
+Display the list of articles by printing their titles and ids.
+Search for an article
+The user will provide an id, and the program should display the article’s title and content.
+Delete an article
+The user will provide an id, and the program should remove the article associated with the id from the list.
+Sample Output 1
+
+--- Knowledge Base Menu ---
+1. Insert new article
+2. View list of articles
+3. Search for an article
+4. Delete an article
+5. Run test cases
+6. Exit
+Enter your choice: 5
+
+--- Test Cases Menu ---
+1. Test Insertion Functionality
+2. Test Search Functionality
+3. Test Deletion Functionality
+4. Test Delete Non-Existent Article
+5. Test Heap Full Insertion
+Enter test case number: 1
+
+--- Running Test Case 1 ---
+Test Case 1: Insertion Functionality
+Inserted article 1 at position 0.
+
+--- List of Articles ---
+ID: 1 | Title: Article 1
+------------------------
+
+Inserted article 2 at the end.
+
+--- List of Articles ---
+ID: 1 | Title: Article 1
+ID: 2 | Title: Article 2
+------------------------
+
+Inserted article 3 at position 1 (middle).
+
+--- List of Articles ---
+ID: 1 | Title: Article 1
+ID: 3 | Title: Article 3
+ID: 2 | Title: Article 2
+------------------------
+
+Insertion test complete.
+--- Test Case 1 Finished ---
+
+--- Knowledge Base Menu ---
+1. Insert new article
+2. View list of articles
+3. Search for an article
+4. Delete an article
+5. Run test cases
+6. Exit
+Enter your choice: 6
+Exiting program. Goodbye!
+Sample Output 2
+
+--- Knowledge Base Menu ---
+1. Insert new article
+2. View list of articles
+3. Search for an article
+4. Delete an article
+5. Run test cases
+6. Exit
+Enter your choice: 5
+
+--- Test Cases Menu ---
+1. Test Insertion Functionality
+2. Test Search Functionality
+3. Test Deletion Functionality
+4. Test Delete Non-Existent Article
+5. Test Heap Full Insertion
+Enter test case number: 2
+
+--- Running Test Case 2 ---
+Test Case 2: Search Functionality
+Searching for existing article (ID 1)...
+
+--- Article Found ---
+ID: 1
+Title: Search Test 1
+Content: Content for search test 1.
+---------------------
+
+Searching for non-existent article (ID 999)...
+Article with ID 999 not found.
+
+Search test complete.
+--- Test Case 2 Finished ---
+
+--- Knowledge Base Menu ---
+1. Insert new article
+2. View list of articles
+3. Search for an article
+4. Delete an article
+5. Run test cases
+6. Exit
+Enter your choice: 6
+Exiting program. Goodbye!
+Sample Output 3
+
+--- Knowledge Base Menu ---
+1. Insert new article
+2. View list of articles
+3. Search for an article
+4. Delete an article
+5. Run test cases
+6. Exit
+Enter your choice: 5
+
+--- Test Cases Menu ---
+1. Test Insertion Functionality
+2. Test Search Functionality
+3. Test Deletion Functionality
+4. Test Delete Non-Existent Article
+5. Test Heap Full Insertion
+Enter test case number: 3
+
+--- Running Test Case 3 ---
+Test Case 3: Deletion Functionality
+
+--- List of Articles ---
+ID: 1 | Title: First to Delete
+ID: 2 | Title: Middle to Delete
+ID: 3 | Title: Last to Delete
+------------------------
+
+Deleting middle article (ID 2)...
+Article with ID 2 deleted successfully.
+
+
+--- List of Articles ---
+ID: 1 | Title: First to Delete
+ID: 3 | Title: Last to Delete
+------------------------
+
+Deleting first article (ID 1)...
+Article with ID 1 deleted successfully.
+
+
+--- List of Articles ---
+ID: 3 | Title: Last to Delete
+------------------------
+
+Deleting last article (ID 3)...
+Article with ID 3 deleted successfully.
+
+The knowledge base is empty.
+Deletion test complete.
+--- Test Case 3 Finished ---
+
+--- Knowledge Base Menu ---
+1. Insert new article
+2. View list of articles
+3. Search for an article
+4. Delete an article
+5. Run test cases
+6. Exit
+Enter your choice: 6
+Exiting program. Goodbye!
