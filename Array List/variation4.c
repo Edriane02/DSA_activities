@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#define LENGTH 4
+#define LENGTH 10
 
 typedef struct {
     int *elem;
