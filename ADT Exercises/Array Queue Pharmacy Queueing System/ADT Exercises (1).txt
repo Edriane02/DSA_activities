@@ -1,0 +1,29 @@
+﻿Pharmacy Queueing System
+Array Queue
+
+
+Create a C program for a pharmacy queueing system with two distinct queues: one for regular customers and another for priority customers. The program should manage the flow of customers from arrival to service, prioritizing those in the priority queue.
+
+
+The program should include the following essential features:
+1. Upon arrival, a customer should be prompted to choose between entering the regular queue or the priority queue.
+2. The system will automatically assign a unique queue number to each customer. This number should be sequential, starting from 1.
+3. There will be an option to call the next customer for service. The system must prioritize the priority queue at all times. If the priority queue is not empty, the next customer called will always be from that queue. Only when the priority queue is empty will the system call a customer from the regular queue.
+
+
+Constraints:
+1. You can only use the following functions to interact with the queues. Place these in arrayQueue.h:
+   * Queue* initialize();
+   * void enqueue(Queue* q, int value);
+   * int dequeue(Queue* q);
+   * bool isFull(Queue* q);
+   * bool isEmpty(Queue* q);
+   * void display(Queue* q);
+
+
+Guide Questions (5 pts. each, on paper)
+From the MAIN function:
+1. Write the code to declare and initialize the two queues
+2. Write the code for entering the regular queue
+3. Write the code for entering the priority queue
+4. Write the code for calling the next customer

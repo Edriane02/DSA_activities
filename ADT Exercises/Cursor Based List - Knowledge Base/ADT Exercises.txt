@@ -1,0 +1,31 @@
+﻿Knowledge Base
+Cursor Based List
+
+
+You just had this amazing idea of creating a knowledge base for your company’s internal system. A knowledge base is a centralized repository of information, organized to support information retrieval and sharing within an organization. This knowledge base would contain everything employees will need to know about the system, such as credentials, guides, and manuals that should only be shared within the organization.
+
+
+To promote security, you decided to use a Virtual Heap that only exists in a protected portion of the memory. You will then use a cursor-based implementation of a list to store the data with a maximum of 20 cells. The structure of the data is as follows:
+Article: {
+   id: integer,
+   title: string(64),
+   content: string(255),
+}
+
+
+As the admin of this knowledge base, you should be able to perform the following operations:
+1. Insert new article
+   * The user will provide the article details and a position to insert the article. If position is -1, it should be added to the end of the list.
+   * Article id is automatically generated (ascending order).
+2. View list of articles
+   * Display the list of articles by printing their titles and ids.
+3. Search for an article
+   * The user will provide an id, and the program should display the article’s title and content.
+4. Delete an article
+   * The user will provide an id, and the program should remove the article associated with the id from the list.
+
+
+Guide Questions (5 pts. each, on paper)
+1. Write the function for inserting a new article.
+2. Write the function for searching an article.
+3. Write the function for deleting an article.
